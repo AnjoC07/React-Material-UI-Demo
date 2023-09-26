@@ -1,7 +1,35 @@
-import { Stack, Button, IconButton, ButtonGroup } from "@mui/material"; //Import ButtonGroup Component
+import {
+  Stack,
+  Button,
+  IconButton,
+  ButtonGroup,
+  ToggleButtonGroup,
+  ToggleButton,
+} from "@mui/material"; //Import Toggle Button
 import SendIcon from "@mui/icons-material/Send";
+// Import Format Icon Libraries
+import FormatBoldIcon from "@mui/icons-material/FormatBold";
+import FormatItalicIcon from "@mui/icons-material/FormatItalic";
+import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
+// Use of useState
+import { useState } from "react";
 
 export const MuiButton = () => {
+  // Declaration of useState
+  // const [formats, setFormats] = useState<string[]>([]);
+  const [formats, setFormats] = useState<string | null>(null); // - exclusive
+  console.log({
+    formats,
+  });
+  // Declaration of handleFormatChange Function
+  const handleFormatChange = (
+    _event: React.MouseEvent<HTMLElement>,
+    // updatedFormats: string[]
+    updatedFormats: string | null // -exclusive
+  ) => {
+    setFormats(updatedFormats);
+  };
+
   return (
     <Stack spacing={4}>
       <Stack spacing={2} direction={"row"}>
@@ -89,6 +117,32 @@ export const MuiButton = () => {
           <Button>Center</Button>
           <Button>Right</Button>
         </ButtonGroup>
+      </Stack>
+
+      {/* Toggle Button Group Component*/}
+      {/* Incorporation of useState */}
+      <Stack direction="row">
+        <ToggleButtonGroup
+          aria-label="text formatting"
+          value={formats}
+          onChange={handleFormatChange} //define this function above const handleFormatChange
+          // Addition of cosmetic prompts
+          size="small"
+          color="success"
+          orientation="vertical"
+          // Exclusive Prompt - The user may only choose either one of the following function
+          exclusive
+        >
+          <ToggleButton value="bold" aria-label="bold">
+            <FormatBoldIcon />
+          </ToggleButton>
+          <ToggleButton value="italic" aria-label="italic">
+            <FormatItalicIcon />
+          </ToggleButton>
+          <ToggleButton value="underlined" aria-label="underlined">
+            <FormatUnderlinedIcon />
+          </ToggleButton>
+        </ToggleButtonGroup>
       </Stack>
     </Stack>
   );
