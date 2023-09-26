@@ -1,4 +1,4 @@
-// MuiTypography.tsx
+// MuiTypography.tsx - 1. TYPOGRAPHY
 import React from "react";
 import { Typography } from "@mui/material";
 
