@@ -1,7 +1,8 @@
 // App.tsx
 import "./App.css";
-import { MuiSpeedDial } from "./components/MuiSpeedDial";
+import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
 
+// import { MuiSpeedDial } from "./components/MuiSpeedDial";
 // import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
 // import { MuiDrawer } from "./components/MuiDrawer";
 // import { MuiLink } from "./components/MuiLink";
@@ -40,7 +41,8 @@ function App() {
       <MuiBreadcrumbs />
       <MuiDrawer /> */}
       {/* <MuiLink /> */}
-      <MuiSpeedDial />
+      {/* <MuiSpeedDial /> */}
+      <MuiBottomNavigation />
     </div>
   );
 }
