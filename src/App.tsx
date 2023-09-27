@@ -1,7 +1,8 @@
 // App.tsx
 import "./App.css";
-import { MuiList } from "./components/MuiList";
+import { MuiChip } from "./components/MuiChip";
 
+// import { MuiList } from "./components/MuiList";
 // import { MuiBadge } from "./components/MuiBadge";
 // import { MuiAvatar } from "./components/MuiAvatar";
 // import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
@@ -48,7 +49,8 @@ function App() {
       {/* <MuiBottomNavigation /> */}
       {/* <MuiAvatar /> */}
       {/* <MuiBadge /> */}
-      <MuiList />
+      {/* <MuiList /> */}
+      <MuiChip />
     </div>
   );
 }
