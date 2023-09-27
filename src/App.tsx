@@ -1,6 +1,7 @@
 // App.tsx
 import "./App.css";
-import { MuiLink } from "./components/MuiLink";
+import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
+// import { MuiLink } from "./components/MuiLink";
 import { MuiNavbar } from "./components/MuiNavbar";
 
 // import { MuiImageList } from "./components/MuiImageList";
@@ -34,7 +35,8 @@ function App() {
       {/* <MuiAccordion /> */}
       {/* <MuiImageList /> */}
       <MuiNavbar />
-      <MuiLink />
+      <MuiBreadcrumbs />
+      {/* <MuiLink /> */}
     </div>
   );
 }
