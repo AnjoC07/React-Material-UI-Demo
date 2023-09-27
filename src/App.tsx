@@ -1,7 +1,8 @@
 // App.tsx
 import "./App.css";
-import { MuiAlert } from "./components/MuiAlert";
+import { MuiSnackbar } from "./components/MuiSnackbar";
 
+// import { MuiAlert } from "./components/MuiAlert";
 // import { MuiTable } from "./components/MuiTable";
 // import { MuiTooltip } from "./components/MuiTooltip";
 // import { MuiChip } from "./components/MuiChip";
@@ -56,7 +57,8 @@ function App() {
       {/* <MuiChip /> */}
       {/* <MuiTooltip /> */}
       {/* <MuiTable /> */}
-      <MuiAlert />
+      {/* <MuiAlert /> */}
+      <MuiSnackbar />
     </div>
   );
 }
