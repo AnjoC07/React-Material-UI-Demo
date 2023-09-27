@@ -1,7 +1,8 @@
 // App.tsx
 import "./App.css";
-import { MuiSwitch } from "./components/MuiSwitch";
+import { MuiRating } from "./components/MuiRating";
 
+// import { MuiSwitch } from "./components/MuiSwitch";
 // import { MuiCheckbox } from "./components/MuiCheckbox";
 // import { MuiRadioButton } from "./components/MuiRadioButton";
 // import { MuiSelect } from "./components/MuiSelect";
@@ -18,7 +19,8 @@ function App() {
       {/* <MuiSelect />  */}
       {/* <MuiRadioButton />  */}
       {/* <MuiCheckbox />  */}
-      <MuiSwitch />
+      {/* <MuiSwitch /> */}
+      <MuiRating />
     </div>
   );
 }
