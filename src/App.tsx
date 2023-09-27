@@ -1,7 +1,8 @@
 // App.tsx
 import "./App.css";
-import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
+import { MuiAvatar } from "./components/MuiAvatar";
 
+// import { MuiBottomNavigation } from "./components/MuiBottomNavigation";
 // import { MuiSpeedDial } from "./components/MuiSpeedDial";
 // import { MuiBreadcrumbs } from "./components/MuiBreadcrumbs";
 // import { MuiDrawer } from "./components/MuiDrawer";
@@ -42,7 +43,8 @@ function App() {
       <MuiDrawer /> */}
       {/* <MuiLink /> */}
       {/* <MuiSpeedDial /> */}
-      <MuiBottomNavigation />
+      {/* <MuiBottomNavigation /> */}
+      <MuiAvatar />
     </div>
   );
 }
