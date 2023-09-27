@@ -1,7 +1,8 @@
 // App.tsx
 import "./App.css";
-import { MuiImageList } from "./components/MuiImageList";
+import { MuiNavbar } from "./components/MuiNavbar";
 
+// import { MuiImageList } from "./components/MuiImageList";
 // import { MuiAccordion } from "./components/MuiAccordion";
 // import { MuiCard } from "./components/MuiCard";
 // import { MuiLayout } from "./components/MuiLayout";
@@ -30,7 +31,8 @@ function App() {
       {/* <MuiLayout /> */}
       {/* <MuiCard /> */}
       {/* <MuiAccordion /> */}
-      <MuiImageList />
+      {/* <MuiImageList /> */}
+      <MuiNavbar />
     </div>
   );
 }
