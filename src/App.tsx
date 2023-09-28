@@ -1,7 +1,8 @@
 // App.tsx
 import "./App.css";
-import { MuiDialog } from "./components/MuiDialog";
+import { MuiProgress } from "./components/MuiProgress";
 
+// import { MuiDialog } from "./components/MuiDialog";
 // import { MuiSnackbar } from "./components/MuiSnackbar";
 // import { MuiAlert } from "./components/MuiAlert";
 // import { MuiTable } from "./components/MuiTable";
@@ -60,7 +61,8 @@ function App() {
       {/* <MuiTable /> */}
       {/* <MuiAlert /> */}
       {/* <MuiSnackbar /> */}
-      <MuiDialog />
+      {/* <MuiDialog /> */}
+      <MuiProgress />
     </div>
   );
 }
