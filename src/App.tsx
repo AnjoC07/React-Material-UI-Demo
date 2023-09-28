@@ -2,8 +2,9 @@
 import "./App.css";
 import { LocalizationProvider } from "mui/lab";
 import AdapterDateFns from "mui/lab/AdapterDateFns";
-import { MuiMasonry } from "./components/MuiMasonry";
+import { MuiResponsiveness } from "./components/MuiResponsiveness";
 
+// import { MuiMasonry } from "./components/MuiMasonry";
 // import { MuiTimeline } from "./components/MuiTimeline";
 // import { MuiTabs } from "./components/MuiTabs";
 // import { MuiDateRangePicker } from "./components/MuiDateRangePicker";
@@ -79,7 +80,8 @@ function App() {
         {/* <MuiDateRangePicker /> */}
         {/* <MuiTabs /> */}
         {/* <MuiTimeline /> */}
-        <MuiMasonry />
+        {/* <MuiMasonry /> */}
+        <MuiResponsiveness />
       </div>
     </LocalizationProvider>
   );
